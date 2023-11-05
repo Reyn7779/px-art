@@ -78,7 +78,11 @@ input[type="color"] {
 .gridOn #pixelCanvas {
   outline: 1px solid #dcdcdc; /* Adds an outline to the entire canvas when the grid is on */
 }
-
+li {
+  outline-color: black;
+  border: 1px solid black;
+  gap: 1px;
+}
 </style>
 </head>
 <body>
@@ -342,6 +346,16 @@ document.querySelectorAll('.pixel').forEach(pixel => {
 });
 
 </script>
+<script src="saved.js"></script>
 
 </body>
+<!-- ... existing HTML ... -->
+
+<div id="savedArtList">
+  <h2>Saved Creations</h2>
+  <ul id="savedList"></ul>
+</div>
+
+<!-- ... existing HTML ... -->
+<br><br><br>
 </html>
